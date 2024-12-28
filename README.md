@@ -1,47 +1,48 @@
-# ML-Iris-flowers-project
-
-# Batch Gradient Descent with Early Stopping for Softmax Regression
+# Classifying Iris Flowers Using Batch Gradient Descent and Early Stopping
 
 ## Overview
-This project demonstrates the implementation of **batch gradient descent with early stopping** for **softmax regression** entirely from scratch using **NumPy**. The Iris dataset is used as the classification task, showcasing the application of fundamental machine learning concepts without relying on external libraries like Scikit-Learn.
+This project focuses on classifying the famous **Iris flower dataset** using a custom implementation of **batch gradient descent** with **early stopping** for **softmax regression**. The goal is to build a multi-class classification model from scratch using **NumPy**, providing a comprehensive understanding of machine learning techniques while working with a classic dataset.
 
-The project provides insights into building machine learning algorithms from scratch and evaluates the performance using established metrics like loss and accuracy.
+This project highlights both the beauty of the Iris dataset and the power of algorithmic implementation in machine learning.
 
 ## Skills Demonstrated
-Through this project, the following skills were applied and tested:
+Through this project, the following skills were explored and tested:
 1. **Data Preprocessing**:
    - Feature scaling (standardization).
-   - One-hot encoding for multi-class targets.
+   - One-hot encoding for multi-class target labels.
 2. **Algorithm Development**:
-   - Implementation of softmax function and cross-entropy loss.
+   - Softmax function implementation.
+   - Cross-entropy loss calculation.
    - Batch gradient descent optimization.
-   - Early stopping to prevent overfitting during training.
+   - Early stopping for better generalization.
 3. **Model Evaluation**:
-   - Training, validation, and test split creation.
-   - Monitoring training and validation loss across epochs.
-   - Computing classification accuracy on unseen test data.
+   - Training-validation-test split creation.
+   - Monitoring loss metrics over epochs.
+   - Computing classification accuracy on test data.
 4. **Visualization**:
-   - Plotting training and validation loss curves.
-   - Visualizing decision boundaries to interpret classification results.
-
-## Results
-- **Test Accuracy**: Achieved approximately **76.67%** on the Iris dataset.
-- **Early Stopping**: Prevented overfitting effectively by monitoring validation loss, ensuring optimal performance.
-- **Key Insights**:
-  - The implemented gradient descent reduced both training and validation loss consistently.
-  - The final learned weights reflected meaningful feature importance for the classification task.
+   - Training and validation loss curves.
+   - Decision boundary plots for interpretability.
 
 ## Dataset
-The [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) is used:
-- **Features**: Sepal and petal lengths/widths (4 numerical features).
-- **Classes**: Setosa, Versicolor, Virginica (3 target labels).
+The [Iris flower dataset](https://archive.ics.uci.edu/ml/datasets/iris) is used, which consists of:
+- **Features**: Sepal length, sepal width, petal length, petal width.
+- **Classes**: Setosa, Versicolor, Virginica.
+
+The dataset is renowned in machine learning as a beginner-friendly and interpretable multi-class classification problem.
+
+## Results
+- **Test Accuracy**: Achieved approximately **76.67%** on the test set.
+- **Early Stopping**: Successfully reduced overfitting and ensured robust performance.
+- **Key Takeaways**:
+  - Consistent reduction in training and validation loss across epochs.
+  - Final weights reflected meaningful feature importance.
 
 ## Requirements
-Ensure Python 3.7 or higher is installed, along with the following libraries:
+Ensure you have Python 3.7 or higher and the following libraries installed:
 - `numpy`
 - `matplotlib`
 - `pandas`
-- `seaborn` (optional, for additional visualizations)
+- `seaborn` (optional for visualizations)
 
 Install dependencies via pip:
 ```bash
